@@ -1,5 +1,7 @@
 # twilight-shell/app-launcher
 
+[![ci](https://github.com/twilight-shell/app-launcher/actions/workflows/ci.yml/badge.svg)](https://github.com/twilight-shell/app-launcher/actions/workflows/ci.yml)
+
 "Twilight's Library": an app grid over a starry sky. Part of the
 [twilight-shell](https://github.com/twilight-shell) organization; it works on its
 own or as a piece of the full shell.
@@ -52,6 +54,10 @@ terminal = ["xterm", "-e"]
 
 The colors come from `~/.config/twilight-shell/theme.toml` (see
 [core](https://github.com/twilight-shell/core)).
+
+## Contributing
+
+Contributions are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Agents and the like: [AGENTS.md](AGENTS.md).
 
 ## License
 
