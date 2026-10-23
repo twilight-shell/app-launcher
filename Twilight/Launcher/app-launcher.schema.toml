@@ -1,0 +1,10 @@
+title = "Launcher"
+description = "Twilight's Library, the app launcher."
+glyph = "✦"
+order = 50
+
+[[options]]
+key = "terminal"
+title = "Terminal"
+description = "What runs apps that need a terminal; the app's own command is appended. Words are separated by spaces."
+type = "command"
