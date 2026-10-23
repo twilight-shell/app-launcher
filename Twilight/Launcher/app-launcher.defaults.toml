@@ -1,0 +1,2 @@
+# What runs apps that need a terminal; the app's command is appended.
+terminal = ["xterm", "-e"]
