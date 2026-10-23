@@ -1,0 +1,3 @@
+module Twilight.Launcher
+Launcher 1.0 Launcher.qml
+singleton Apps 1.0 search/Apps.qml
