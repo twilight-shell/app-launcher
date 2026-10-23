@@ -17,7 +17,7 @@ Scope {
     property string outputName: ""
     // Command that runs terminal apps; the app's own command is appended.
     // Read from app-launcher.toml, or set by the host.
-    property var terminal: config.get("terminal", ["xterm", "-e"])
+    property var terminal: config.get("terminal")
 
     signal launched(var app)
 
@@ -45,6 +45,7 @@ Scope {
         id: config
 
         name: "app-launcher"
+        defaults: Qt.resolvedUrl("app-launcher.defaults.toml")
     }
 
     IpcHandler {

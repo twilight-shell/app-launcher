@@ -42,11 +42,12 @@ Launcher {
 
 ## Settings
 
-`~/.config/twilight-shell/app-launcher.toml`, applied as soon as it is saved:
+`~/.config/twilight-shell/app-launcher.toml`, created with the defaults the
+first time the launcher starts and applied as soon as it is saved:
 
 ```toml
 # What runs apps that need a terminal; the app's command is appended.
-terminal = ["ghostty", "-e"]    # default: ["xterm", "-e"]
+terminal = ["xterm", "-e"]
 ```
 
 The colors come from `~/.config/twilight-shell/theme.toml` (see
