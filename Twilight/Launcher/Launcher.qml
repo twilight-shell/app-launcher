@@ -16,7 +16,8 @@ Scope {
     // The compositor is the host's business, so the host sets it.
     property string outputName: ""
     // Command that runs terminal apps; the app's own command is appended.
-    property var terminal: ["xterm", "-e"]
+    // Read from app-launcher.toml, or set by the host.
+    property var terminal: config.get("terminal", ["xterm", "-e"])
 
     signal launched(var app)
 
@@ -39,6 +40,12 @@ Scope {
 
     property double lastToggle: 0
     property bool launching: false
+
+    ConfigFile {
+        id: config
+
+        name: "app-launcher"
+    }
 
     IpcHandler {
         target: "launcher"

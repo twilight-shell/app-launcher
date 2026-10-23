@@ -34,12 +34,23 @@ import Twilight.Launcher
 Launcher {
     id: launcher
     outputName: "DP-1"          // where to open; the first screen by default
-    terminal: ["ghostty", "-e"] // runs apps that need a terminal
     onLaunched: app => console.log(app.name)
 }
 ```
 
 `launcher.open()`, `launcher.close()` and `launcher.toggle()` control it.
+
+## Settings
+
+`~/.config/twilight-shell/app-launcher.toml`, applied as soon as it is saved:
+
+```toml
+# What runs apps that need a terminal; the app's command is appended.
+terminal = ["ghostty", "-e"]    # default: ["xterm", "-e"]
+```
+
+The colors come from `~/.config/twilight-shell/theme.toml` (see
+[core](https://github.com/twilight-shell/core)).
 
 ## License
 
