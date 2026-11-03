@@ -3,6 +3,10 @@
 Versions follow [Semantic Versioning](https://semver.org). Until 1.0, a minor version
 may change how things work.
 
+## Unreleased
+
+- Keep the launcher toggle working after the system clock moves backwards.
+
 ## 0.1.0 - 2026-10-24
 
 The first release.
