@@ -32,7 +32,8 @@ Scope {
     function toggle(): void {
         // A held hotkey repeats: ignore toggles that come too fast.
         const now = Date.now();
-        if (now - lastToggle < 250)
+        // A clock correction backwards must not block opening the launcher.
+        if (now >= lastToggle && now - lastToggle < 250)
             return;
         lastToggle = now;
         opened = !opened;
